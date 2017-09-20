@@ -1,0 +1,22 @@
+
+  {# templates/include/base.twig #}
+  <!doctype html>
+  <html lang="it">
+    <head>
+
+      {% include 'templates/include/meta.twig' %}
+      {% block meta %}{% endblock %}
+
+      {% include 'templates/include/stylesheet.twig' %}
+      {% block stylesheet %}{% endblock %}
+
+    </head>
+    <body>
+
+      {% block content %}{% endblock %}
+
+      {% include 'templates/include/javascript.twig' %}
+      {% block javascript %}{% endblock %}
+
+    </body>
+  </html>

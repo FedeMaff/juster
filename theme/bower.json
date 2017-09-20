@@ -1,0 +1,13 @@
+{
+  "name": "asstes",
+  "authors": [
+    "federico <federico.maffucci@gmail.com>"
+  ],
+  "description": "Basic front-end javascript and css libraries",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}

@@ -1,0 +1,32 @@
+
+  
+  .transition {
+  -webkit-transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+   -moz-transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+     -o-transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+        transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000); /* easeOutQuint */
+
+  -webkit-transition-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+        transition-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000); /* easeOutQuint */
+  }
+
+
+  // Example
+  html, body {
+    height: 100%;
+  }
+  .root-table {
+    height: 100%;
+    td {
+        font-size: 45px;
+        text-align: center;
+        vertical-align: middle;
+        text-shadow: 0px 1px #fff;
+        &:hover {
+          font-size: 60px;
+        }
+        @extend .transition;
+    }
+  }
