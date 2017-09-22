@@ -24,7 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 if (isset($_SERVER['HTTP_HOST']) && $_SERVER['SCRIPT_NAME']) {
-  $config['base_url']  =  "http://".$_SERVER['HTTP_HOST'];
+  $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
+  $config['base_url']  =  $protocol.$_SERVER['HTTP_HOST'];
   $config['base_url'] .= preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])).'/';
 }
 else {
